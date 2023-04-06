@@ -1,0 +1,34 @@
+{
+    "name": "merch-one/laravel-api-sdk",
+    "description": "Laravel extension for MerchOne API SDK",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": "^6|^7|^8|^9",
+        "merch-one/php-api-sdk": "^1.0"
+    },
+    "license": "MIT",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "MerchOne\\LaravelApiSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "The Customization Group"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MerchOne\\LaravelApiSdk\\Providers\\MerchOneApiServiceProvider"
+            ],
+            "aliases": {
+                "MerchOneApiClient": "MerchOne\\LaravelApiSdk\\\\Facades\\MerchOneApiClient"
+            }
+        }
+    }
+}
